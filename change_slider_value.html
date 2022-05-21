@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Demo Website</title>
+  </head>
+  <body>
+    <input
+      type="range"
+      min="1"
+      max="100"
+      value="50"
+      class="slider"
+      id="myrange"
+    />
+
+    <p id="demo">0</p>
+
+    <script>
+        var input = document.getElementById('myrange');
+        var output = document.getElementById("demo");
+        
+        // Display the Default Slider Value
+        output.innerHTML = input.value;
+
+        // Update the current slider value
+
+        input.oninput = function() {
+            output.innerHTML = this.value;
+        }
+
+    </script>
+  </body>
+</html>

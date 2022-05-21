@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Demo Website</title>
+  </head>
+  <body>
+    <input
+      type="text"
+      placeholder="Enter Your Name"
+      class="slider"
+      id="myrange"
+    />
+
+    <p id="demo">Hello</p>
+
+    <script>
+      var input = document.getElementById("myrange");
+      var output = document.getElementById("demo");
+
+      // Display the Default input Value
+      output.innerHTML = input.value;
+
+      // Update the current input value
+
+      input.oninput = function () {
+        output.innerHTML = "Hello " + this.value +",";
+      };
+    </script>
+  </body>
+</html>
