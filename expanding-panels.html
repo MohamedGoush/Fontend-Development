@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FlexBox Expanding Panels</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .container {
+        display: flex;
+        flex-direction: row;
+        height: 100vh;
+      }
+      .flex {
+        flex: 1;
+        position: relative;
+        transition: 500ms ease-in-out;
+      }
+      .flex1 {
+        background-color: #ffba5a;
+      }
+      .flex2 {
+        background-color: #2c7873;
+      }
+      .flex3 {
+        background-color: #c72c41;
+      }
+      .flex .text {
+        transform: translate(-50%, -50%);
+        margin: 0;
+        font-size: 65px;
+        top: 50%;
+        left: 50%;
+        position: absolute;
+        color: white;
+      }
+      .flex:hover{
+          flex: 3;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="flex flex1">
+        <h4 class="text">Bismillah</h4>
+      </div>
+
+      <div class="flex flex2">
+        <h4 class="text">Alhamthulillah</h4>
+      </div>
+
+      <div class="flex flex3">
+        <h4 class="text">Allahu Akbar</h4>
+      </div>
+    </div>
+  </body>
+</html>
