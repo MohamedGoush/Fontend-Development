@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      #btn-button {
+        color: white;
+        padding: 16px 52px;
+        font-size: 16px;
+        border: none;
+        font-weight: 600;
+        border-radius: 7px;
+        text-transform: uppercase;
+        background-color: #367bf5;
+      }
+
+      #btn-warning {
+        color: white;
+        padding: 16px 45px;
+        font-size: 16px;
+        border: none;
+        font-weight: 600;
+        border-radius: 7px;
+        text-transform: uppercase;
+        background-color: #ea3d2f;
+      }
+      #btn-positive {
+        color: white;
+        padding: 16px 48px;
+        font-size: 16px;
+        border: none;
+        font-weight: 600;
+        border-radius: 7px;
+        text-transform: uppercase;
+        background-color: #2fa84f;
+      }
+      #btn-attention {
+        color: white;
+        padding: 16px 40px;
+        font-size: 16px;
+        border: none;
+        font-weight: 600;
+        border-radius: 7px;
+        text-transform: uppercase;
+        background-color: #f3aa18;
+      }
+      input[type="button"] {
+        margin-top: 20px;
+      }
+      .button-content1 {
+        display: flex;
+      }
+      .line1,
+      .line2,
+      .line3,
+      .line4,
+      .line5 {
+        margin-left: 20px;
+      }
+
+      /* SMOOTH BUTTONS CSS STYLE */
+
+      #btn-button-smooth {
+        color: #367bf5;
+        padding: 16px 52px;
+        font-size: 16px;
+        border: none;
+        font-weight: 600;
+        border-radius: 7px;
+        text-transform: uppercase;
+        background-color: #e5efff;
+      }
+      #btn-warning-smooth {
+        padding: 16px 45px;
+        font-size: 16px;
+        border: none;
+        font-weight: 600;
+        border-radius: 7px;
+        text-transform: uppercase;
+        color: #ea3d2f;
+        background-color: #fee4e2;
+      }
+      #btn-positive-smooth {
+        padding: 16px 48px;
+        font-size: 16px;
+        border: none;
+        font-weight: 600;
+        border-radius: 7px;
+        text-transform: uppercase;
+        color: #2fa84f;
+        background-color: #dcf7e3;
+      }
+      #btn-attention-smooth {
+        color: white;
+        padding: 16px 40px;
+        font-size: 16px;
+        border: none;
+        font-weight: 600;
+        border-radius: 7px;
+        text-transform: uppercase;
+        color: #f3aa18;
+        background-color: #fcf3d7;
+      }
+
+      /* RAISED BUTTON STYLE */
+
+      #btn-button-ghost {
+        border: 2px solid #367bf5;
+        color: #367bf5;
+        padding: 16px 52px;
+        font-size: 16px;
+        font-weight: 600;
+        border-radius: 7px;
+        text-transform: uppercase;
+        background-color: white;
+      }
+      #btn-warning-ghost {
+        padding: 16px 45px;
+        font-size: 16px;
+        font-weight: 600;
+        border-radius: 7px;
+        text-transform: uppercase;
+        color: #ea3d2f;
+        background-color: white;
+        border: 2px solid #ea3d2f;
+      }
+      #btn-positive-ghost {
+        padding: 16px 48px;
+        font-size: 16px;
+        font-weight: 600;
+        border-radius: 7px;
+        text-transform: uppercase;
+        border: 2px solid #2fa84f;
+        color: #2fa84f;
+        background-color: white;
+      }
+      #btn-attention-ghost {
+        color: white;
+        padding: 16px 40px;
+        font-size: 16px;
+        font-weight: 600;
+        border-radius: 7px;
+        text-transform: uppercase;
+        border: 2px solid #f3aa18;
+        color: #f3aa18;
+        background-color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="button-content1">
+      <div class="line1">
+        <input type="button" value="Button" id="btn-button" /><br />
+        <input type="button" value="warning" id="btn-warning" /><br />
+        <input type="button" value="positive" id="btn-positive" /><br />
+        <input type="button" value="attention" id="btn-attention" /><br />
+      </div>
+      <div class="line2">
+        <input type="button" value="smooth" id="btn-button-smooth" /><br />
+        <input type="button" value="smooth" id="btn-warning-smooth" /><br />
+        <input type="button" value="smooth" id="btn-positive-smooth" /><br />
+        <input type="button" value="smooth" id="btn-attention-smooth" /><br />
+      </div>
+      <div class="line3">
+        <input type="button" value="Button" id="btn-button-ghost" /><br />
+        <input type="button" value="warning" id="btn-warning-ghost" /><br />
+        <input type="button" value="positive" id="btn-positive-ghost" /><br />
+        <input type="button" value="attention" id="btn-attention-ghost" /><br />
+      </div>
+      <div class="line4">
+        <input type="button" value="Button" id="btn-button-raised" /><br />
+        <input type="button" value="warning" id="btn-warning-raised" /><br />
+        <input type="button" value="positive" id="btn-positive-raised" /><br />
+        <input
+          type="button"
+          value="attention"
+          id="btn-attention-raised"
+        /><br />
+      </div>
+      <div class="line5">
+        <input type="button" value="Button" id="btn-button-icon" /><br />
+        <input type="button" value="warning" id="btn-warning-icon" /><br />
+        <input type="button" value="positive" id="btn-positive-icon" /><br />
+        <input type="button" value="attention" id="btn-attention-icon" /><br />
+      </div>
+    </div>
+  </body>
+</html>
