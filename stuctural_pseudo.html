@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        font-size: 25px;
+      }
+      p:first-child {
+        color: skyblue;
+      }
+      h3:last-child {
+        color: skyblue;
+      }
+      *:root {
+        color: blue;
+      }
+      p:first-of-type {
+        font-size: 20px;
+      }
+      h3:last-of-type{
+        font-size: 20px;
+      }
+      li:empty{
+          background-color: pink;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>First Child</h1>
+    <ul>
+        <li>new</li>
+        <li></li>
+    </ul>
+    <div>
+      <p>Paragraph content...</p>
+      <p>Paragraph content...</p>
+    </div>
+    <div>
+      <p>Paragraph content...</p>
+      <p>Paragraph content...</p>
+    </div>
+
+    <h2>Last Child</h2>
+    <div>
+      <h3>Paragraph content...</h3>
+      <h3>Paragraph content...</h3>
+    </div>
+    <div>
+      <h3>Paragraph content...</h3>
+      <h3>Paragraph content...</h3>
+    </div>
+  </body>
+</html>

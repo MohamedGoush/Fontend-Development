@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        /* targeted by the ancher link tag */
+        p:target{       
+            color: #f00;
+        }
+        /* Default Color for the link before it pressed */
+        a:link{
+            color: yellow;
+        }
+        /* Link Color After it visited */
+        a:visited{
+            color: black;
+        }
+    </style>
+  </head>
+  <body>
+    <h1>Link Pseudo Classes</h1>
+    <hr />
+    <h2>:Target Pseudo Classes</h2>
+    <hr />
+    <a href="#s1">Section 1</a>
+    <a href="#s2">Section 2</a>
+    <a href="#s3">Section 3</a>
+    <a href="#s4">Section 4</a>
+    <p id="s1">Document Section 1....</p>
+    <p id="s2">Document Section 2....</p>
+    <p id="s3">Document Section 3....</p>
+    <p id="s4">Document Section 4....</p>
+  </body>
+</html>
